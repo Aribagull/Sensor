@@ -1,20 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DashboardPage from "./Components/Dashboard";
-import Layout from "./Components/PageLayout";
-import AdminPanel from "./Components/AdminPanel";
-import UserData from "./Components/UserData";
-import ApprovalStatus from "./Components/ApprovalStatus";
+
+import CustomerForm from "./Pages/CustomerForm";
+import HomePage from "./Pages/home";
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<DashboardPage />} />
-          <Route path="admin" element={<AdminPanel/>} />
-          <Route path="userdata" element={<UserData/>} />
-          <Route path="approvals" element={<ApprovalStatus/>} />
-        </Route>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/new-customer" element={<CustomerForm type="New Customer" />} />
+        <Route path="/existing-customer" element={<CustomerForm type="Existing Customer" />} />
       </Routes>
     </Router>
   );
