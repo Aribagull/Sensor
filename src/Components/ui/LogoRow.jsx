@@ -25,7 +25,7 @@ export default function LogoRow() {
   ];
 
   return (
-    <div className="w-full bg-[#192030] py-10 flex justify-center">
+    <div className="w-full bg-[#192030]/70 py-10 flex justify-center">
       <div className="flex items-center gap-20">
         {logos.map((item, index) => (
           <div key={index} className="flex items-center gap-3 opacity-80">

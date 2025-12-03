@@ -58,7 +58,7 @@ export default function WhyChoose() {
           <div
   key={index}
   className="
-    bg-[#0c0d25] rounded-2xl p-8 border border-[#c0c4cc]
+    bg-[#0c0d25]/70 rounded-2xl p-8 border border-[#c0c4cc]
     transition-all duration-300 group
 
     hover:border-[#0575c5]

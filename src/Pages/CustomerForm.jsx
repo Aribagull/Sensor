@@ -11,7 +11,7 @@ export default function CustomerForm({ type }) {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-start bg-black overflow-y-auto">
+    <div className=" flex flex-col items-center justify-start bg-black overflow-y-auto pt-32">
 
       {/* ---- CENTER BLUE GLOW AT TOP ---- */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#119dff] rounded-full blur-[150px] opacity-40 pointer-events-none z-0"></div>
@@ -19,13 +19,11 @@ export default function CustomerForm({ type }) {
       {/* Back to Home Button */}
       <button
         onClick={() => navigate("/")}
-        className="absolute top-10 left-10 bg-[#119dff] text-white px-4 py-2 rounded-full shadow-md hover:opacity-90 transition-all z-20"
+        className="absolute top-32 left-10 bg-[#119dff] text-white px-4 py-2 rounded-full shadow-md hover:opacity-90 transition-all z-20"
       >
         ← Back to Home
       </button>
 
-      {/* Logo */}
-      <img src={logo} alt="Logo" className="w-28 mt-10 mb-6 z-10" />
 
       {/* Transparent Form */}
       <form
